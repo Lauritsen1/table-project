@@ -3,7 +3,7 @@ const path = require('path');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.js',
     output: {
         filename: 'main.js',
@@ -32,6 +32,4 @@ module.exports = {
         contentBase: path.join(__dirname, 'public'),
         port: 9000
     },
-
-    watch: true
 }
