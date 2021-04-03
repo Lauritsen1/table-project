@@ -1,6 +1,6 @@
 const { watch } = require('fs');
 const path = require('path');
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+// const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 module.exports = {
     mode: 'production',
@@ -24,9 +24,9 @@ module.exports = {
         ]
     },
 
-    plugins: [
-        new BundleAnalyzerPlugin()
-    ],
+    // plugins: [
+    //     new BundleAnalyzerPlugin()
+    // ],
 
     devServer: {
         contentBase: path.join(__dirname, 'public'),
