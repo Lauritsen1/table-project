@@ -8,7 +8,6 @@
     "dev": "webpack serve"
   },
   "keywords": [],
-  "homepage": "/",
   "author": "",
   "license": "ISC",
   "devDependencies": {
