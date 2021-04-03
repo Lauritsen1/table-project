@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height:1.5;
+}
+
+.logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+}
+
+.announcment {
+    height: 3em;
+    background-color: #162950;
+    padding: 0 5%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 1em;
+        color: white;
+
+        li {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 5em;
+    color: #162950;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 1em;
+
+        li {
+            font-size: 1.2em;
+        }
+    }
+}
+
+.hero {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('https://cdn.shopify.com/s/files/1/0559/9503/9933/files/table-for-two_1950x.jpg?v=1617324852');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        text-align: center;
+        width: 50vw;
+        color: white;
+
+        h2 {
+            font-size: 3.5em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+    }
+}
+
+.spotlight {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__outer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4em;
+
+        h3 {
+            color: #162950;
+            font-size: 1.5em;
+        }
+
+    }
+
+    &__inner-container {
+        display: flex;
+        gap: 2em;
+    }
+}
+
+.product {
+    display: grid;
+    gap: 0.5em;
+
+    img {
+        height: 20em;
+        width: 20em;
+        margin-bottom: 0.5em;
+    }
+
+    h3 {
+        color: #162950;
+        font-size: 1.3em; 
+    }
+
+    p {
+        color: gray;
+    }
+
+    p:last-of-type {
+        font-weight: bold;
+    }
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 20vh;
+    border-top: 1px solid lightgray;
+
+    div:nth-child(1) {
+        h3 {
+            color: #162950;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+    }
+
+    div:nth-child(2) {
+        width: 50%;
+    }
+
+    div:nth-child(3) {
+        display: flex;
+
+        input {
+            height: 3em;
+            width: 20em;
+        }
+
+        button {
+            display: block;
+            background-color: #DA2F0C;
+            color: white;
+            font-weight: bold;
+            height: 3em;
+            border: none;
+            padding: 0 0.5em;
+        }
+    }
+}
